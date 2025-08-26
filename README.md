@@ -8,8 +8,8 @@
 
 # Grupo
 
-- Estudiante 1 (Legajo 1) - cor...@estudiante1.com
-- Estudiante 2 (Legajo 2) - cor...@estudiante2.com
+- Fanciotti Bruno (188619) - bruno...
+- Ibañez Gonzalo Nicolas (162406) - igon....
 
 # Contexto / Escenario
 
