@@ -1,5 +1,3 @@
-package ar.edu.unlu.poo.labo1.artefactos;
-
 import java.util.Objects;
 
 public class Artefacto {
