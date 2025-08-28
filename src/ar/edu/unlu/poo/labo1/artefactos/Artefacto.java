@@ -12,8 +12,13 @@ public class Artefacto {
         this.nombre = nombre;
         this.poder = poder;
         this.tipo = tipo;
-
     }
+
+    /*public Artefacto ArtefactoNulo() {
+        this.nombre = null;
+        this.poder = 0;
+        this.tipo = null;
+    }*/
 
     public String getNombre() {
         return nombre;
@@ -39,15 +44,33 @@ public class Artefacto {
         this.tipo = tipo;
     }
 
-    @Override
+    /*
+        @Override
+        public boolean equals(Object o) {
+        public boolean equals(Object o) {
+            if (o == null || getClass() != o.getClass()) return false;
+            Artefacto artefacto = (Artefacto) o;
+            return  Objects.equals(nombre, artefacto.nombre);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(nombre, poder, tipo);
+        }
+    }
+    */
     public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Artefacto artefacto = (Artefacto) o;
-        return  Objects.equals(nombre, artefacto.nombre);
+        return Objects.equals(nombre, artefacto.nombre);
     }
 
-    @Override
     public int hashCode() {
-        return Objects.hash(nombre, poder, tipo);
+        return Objects.hash(nombre);
     }
 }
